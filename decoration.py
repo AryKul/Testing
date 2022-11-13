@@ -19,11 +19,13 @@ def validator(func): # 1 param = func. Here func - open_url
         else:
             print("Wrong URL")
     return wrapper
-    
+
 
 @validator # run something =  wrapper before func = open_url
 def open_url(url):
     webbrowser.open(url)
-    
+
 open_url("https://itprogercom/course/python/20")
 open_url("https://itproger.com/course/python/20")
+
+# Testing
